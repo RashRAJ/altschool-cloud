@@ -1,0 +1,23 @@
+TEN LINUX COMMANDS
+du command - Used to know the disk usage of a fine in a system
+
+Apt-get  - Use apt-get to install packages just like pip install
+
+
+ping - Used to test the reachability of a host on an IP
+
+grep - Used to search for pattern in files
+
+free - Shows memory and swap usage
+
+fg - brings the most recent job to foreground
+
+!! - repetes last command
+
+finger user - Dsplays information about user
+
+Ls -al    - formated listening including hidden files
+
+df - Shows disk usage 
+
+
