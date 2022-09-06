@@ -3,33 +3,33 @@
  ## Task NO 1 create a file and add 10 linux commands and insert their images
 
 
--### du command - Used to know the disk usage of a fine in a system
+- ### du command - Used to know the disk usage of a fine in a system
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-18%20102507.png)
 
--### Apt-get  - Use apt-get to install packages just like pip install
+- ### Apt-get  - Use apt-get to install packages just like pip install
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-18%20102507.png)
 
--### ping - Used to test the reachability of a host on an IP
+- ### ping - Used to test the reachability of a host on an IP
     ![]()
 
--### grep - Used to search for pattern in files
+- ### grep - Used to search for pattern in files
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-24%20091858.png)
 
--### free - Shows memory and swap usage
+- ### free - Shows memory and swap usage
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-24%20092028.png)
 
--### fg - brings the most recent job to foreground
+- ### fg - brings the most recent job to foreground
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-24%20085919.png)
 
--### !! - repetes last command
+- ### !! - repetes last command
 
--### finger user - Dsplays information about user
+- ### finger user - Dsplays information about user
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-24%20093934.png)
 
--### Ls -al    - formated listening including hidden files
+- ### Ls -al    - formated listening including hidden files
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-24%20090119.png)
 
--### df - Shows disk usage 
+- ### df - Shows disk usage 
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-24%20094002.png)
 
 
