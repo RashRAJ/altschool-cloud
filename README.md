@@ -77,7 +77,6 @@
 
 
  ## Task 4, Github : submit the output of the following
-
   - ### output of git config -l      
       ![](https://github.com/RashRAJ/altschool-cloud/blob/main/git_config-l.png)
 
