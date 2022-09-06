@@ -5,7 +5,7 @@
 
 ## Task 2 create 3 groups add a user to each group creat a ssh key for the user in admin group
 
- ###content of /etc/sudoers
+ ### content of /etc/sudoers
 ![content of sudoers](https://github.com/RashRAJ/altschool-cloud/blob/main/etc_sudoers.png)
 
 # content of /etc/passwd
