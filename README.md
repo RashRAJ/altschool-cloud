@@ -57,7 +57,18 @@
      ![](https://github.com/RashRAJ/altschool-cloud/blob/main/etc_groups.png)
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+## Task 3 Submit the content of /etc/apt/sources.list and the output of php -v command.
+
+
+ - ### content of /etc/apt/sources.list
+ 
+     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/cat_etc_apt_sources.png)
+
+ -### output of php -v command
+    ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Php%20-v.png)
 
 
