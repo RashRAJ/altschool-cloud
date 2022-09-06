@@ -12,6 +12,7 @@
 ![content of passwd](https://github.com/RashRAJ/altschool-cloud/blob/main/etc_groups.png)
 
  ### content of /etc/groups
+![](https://github.com/RashRAJ/altschool-cloud/blob/main/etc_groups.png)
 
 
 
