@@ -68,7 +68,7 @@
  
      ![](https://github.com/RashRAJ/altschool-cloud/blob/main/cat_etc_apt_sources.png)
 
- -### output of php -v command
+ - ### output of php -v command
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Php%20-v.png)
 
 
