@@ -7,8 +7,8 @@
     ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-18%20102507.png)
 
 - ### Apt-get  - Use apt-get to install packages just like pip install
-    ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-18%20102507.png)
-
+    ![](https://github.com/RashRAJ/altschool-cloud/blob/main/Screenshot%202022-08-18%20102608.png)
+    
 - ### ping - Used to test the reachability of a host on an IP
     ![]()
 
