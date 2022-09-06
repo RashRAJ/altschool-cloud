@@ -78,13 +78,13 @@
 
  ## Task 4, Github : submit the output of the following
 
-  -### output of git config -l      
+  - ### output of git config -l      
       ![](https://github.com/RashRAJ/altschool-cloud/blob/main/git_config-l.png)
 
-  -### output of git remote -v
+  - ### output of git remote -v
       ![](https://github.com/RashRAJ/altschool-cloud/blob/main/git_remote-v.png)
 
-  -### output of git log
+  - ### output of git log
       ![]()
 
 
