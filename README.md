@@ -1,9 +1,9 @@
  # altschool-cloud
 # Table of contents
 1. ![Task 1](#task1)
-2. ![Task 2](#task 3)
-3. ![Task 3](#task 3)
-4. ![Task 4](#task 4)
+2. ![Task 2](#task2)
+3. ![Task 3](#task3)
+4. ![Task 4](#task4)
 
 
 
@@ -52,7 +52,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- ## Task 2 create 3 groups add a user to each group creat a ssh key for the user in admin group <a name="task 2"></a>
+ ## Task 2 create 3 groups add a user to each group creat a ssh key for the user in admin group <a name="task2"></a>
 
 - ### content of /etc/sudoers
      ![content of sudoers](https://github.com/RashRAJ/altschool-cloud/blob/main/etc_sudoers.png)
@@ -68,7 +68,7 @@
 
 
 
-## Task 3 Submit the content of /etc/apt/sources.list and the output of php -v command. <a name="task 3"></a>
+## Task 3 Submit the content of /etc/apt/sources.list and the output of php -v command. <a name="task3"></a>
 
 
  - ### content of /etc/apt/sources.list
@@ -83,7 +83,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
- ## Task 4, Github : submit the output of the following <a name="task 4"></a>
+ ## Task 4, Github : submit the output of the following <a name="task4"></a>
   - ### output of git config -l      
       ![](https://github.com/RashRAJ/altschool-cloud/blob/main/git_config-l.png)
 
