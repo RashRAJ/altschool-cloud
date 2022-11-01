@@ -54,7 +54,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- ## Task 2 create 3 groups add a user to each group creat a ssh key for the user in admin group <a name="task2"></a>
+ ## <a name="task2" Task 2 create 3 groups add a user to each group creat a ssh key for the user in admin group ></a>
 
 - ### content of /etc/sudoers
      ![content of sudoers](https://github.com/RashRAJ/altschool-cloud/blob/main/etc_sudoers.png)
