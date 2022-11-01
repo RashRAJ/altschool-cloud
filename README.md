@@ -1,15 +1,15 @@
  # altschool-cloud
 # Table of contents
-1. ![Task 1](#task1)
-2. ![Task 2](#task2)
-3. ![Task 3](#task3)
-4. ![Task 4](#task4)
-5. ![Task 5](#task5)
-6. ![Task 6](#task6)
+1. [Task 1](#task1)
+2. [Task 2](#task2)
+3. [Task 3](#task3)
+4. [Task 4](#task4)
+5. [Task 5](#task5)
+6. [Task 6](#task6)
 
 
-
- ## Task NO 1 create a file and add 10 linux commands and insert their images  <a name="task1"></a>
+#task1
+ ## Task NO 1 create a file and add 10 linux commands and insert their images 
 
 
 
