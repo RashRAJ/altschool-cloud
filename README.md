@@ -108,8 +108,8 @@
 -### sample mail
      ![](https://github.com/RashRAJ/altschool-cloud/blob/main/log%20report.png)
      
-     
- ##  Task 6Create an Ansible Playbook to setup a server with Apache The server should be set to the Africa/Lagos Timezone Host an index.php file with the following content, as the main file on the server:<a name="task6"></a>
+#tasks6
+ ##  Task 6Create an Ansible Playbook to setup a server with Apache The server should be set to the Africa/Lagos Timezone Host an index.php file with the following content, as the main file on the server
  
  -## Submision the Ansible playbook, the output of systemctl status apache2 after deploying the playbook and a screenshot of the rendered page
  
