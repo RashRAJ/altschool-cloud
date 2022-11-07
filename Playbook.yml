@@ -1,0 +1,121 @@
+- hosts: all
+  become: yes
+  become_method: sudo
+  become_user: root
+  become_flags: -H
+  vars:
+    apache_user: www-data
+    apache_group: www-data
+    apache_listen_port: 80
+
+  tasks:
+    - name: Install Apache
+      apt: name=apache2 state=present
+
+    - name: Install PHP
+      apt: name=php state=present
+
+    - name: Install PHP Modules
+      apt: name={{ item }} state=present
+      with_items:
+        - php-mbstring
+        - php-xml
+        - php-zip
+        - php-curl
+        - php-mysql
+        - php-gd
+        - php-bcmath
+        - php-json
+        - php-mbstring
+        - php-xml
+        - php-zip
+        - php-curl
+        - php-mysql
+        - php-gd
+        - php-bcmath
+        - php-json
+
+    - name: Install Composer
+      get_url:
+        url: https://getcomposer.org/installer
+        dest: /tmp/composer-setup.php
+      register: composer
+
+    - name: Install Composer
+      shell: php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+      become: yes
+
+    - name: Install Composer
+      get_url:
+        url: https://getcomposer.org/installer
+        dest: /tmp/composer-setup.php
+      register: composer
+
+    - name: Install Composer
+      shell: php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+      become: yes
+
+    - name: clone laravel codebase
+      git:
+        repo: https://github.com/laravel/laravel.git
+        dest: /var/www/laravel
+      become: yes
+
+    - name: folder rights
+      file:
+        path: /var/www/laravel
+        owner: "{{ ansible_effective_user_id }}"
+        group: "{{ ansible_effective_group_id }}"
+      become: yes
+
+    - name: set permission for the storage folder
+      file:
+        path: /var/www/laravel/laravel/storage
+        state: directory
+        recurse: yes
+        mode: '0755'
+      become: yes
+
+    - name: install laravel dependencies
+      composer:
+       command: install
+        working_dir: /var/www/laravel/laravel
+      become: yes
+
+    - name: copy env file
+      copy:
+        src: /var/www/laravel/laravel/.env.example
+        remote_src: yes
+        dest: /var/www/laravel/laravel/.env
+        owner: "{{ ansible_effective_user_id }}"
+        mode: '0644'
+      become: yes
+
+    - name: copy apache config
+      copy:
+        src: stubs/laravel.conf
+        dest: /etc/apache2/sites-available/laravel.conf
+        owner: "{{ ansible_effective_user_id }}"
+        group: "{{ ansible_effective_group_id }}"
+        mode: '0644'
+      become: yes
+
+
+    - name: enable new config
+      shell: |
+        a2enmod rewrite
+        a2dissite 000-defult.conf
+        a2ensite laravel.conf
+      become: yes
+
+    - name: app folder permission
+      shell: |
+        chown -R www-data:www-data /var/www/laravel/laravel
+        chmod -R 775 /var/www/laravel/laravel
+      become: yes
+
+    - name: setup laravel
+      shell: |
+        cd /var/www/laravel/laravel
+        php artisan key:generate
+      become: yes
