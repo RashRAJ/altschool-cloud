@@ -57,7 +57,7 @@
 
     - name: clone laravel codebase
       git:
-        repo: https://github.com/laravel/laravel.git
+        repo: https://github.com/laravel.git
         dest: /var/www/laravel
       become: yes
 
@@ -70,7 +70,7 @@
 
     - name: set permission for the storage folder
       file:
-        path: /var/www/laravel/laravel/storage
+        path: /var/www/laravel/storage
         state: directory
         recurse: yes
         mode: '0755'
@@ -79,14 +79,14 @@
     - name: install laravel dependencies
       composer:
        command: install
-        working_dir: /var/www/laravel/laravel
+        working_dir: /var/www/laravel
       become: yes
 
     - name: copy env file
       copy:
-        src: /var/www/laravel/laravel/.env.example
+        src: /var/www/laravel/.env.example
         remote_src: yes
-        dest: /var/www/laravel/laravel/.env
+        dest: /var/www/laravel/.env
         owner: "{{ ansible_effective_user_id }}"
         mode: '0644'
       become: yes
@@ -110,12 +110,12 @@
 
     - name: app folder permission
       shell: |
-        chown -R www-data:www-data /var/www/laravel/laravel
-        chmod -R 775 /var/www/laravel/laravel
+        chown -R www-data:www-data /var/www/laravel
+        chmod -R 775 /var/www/laravel
       become: yes
 
     - name: setup laravel
       shell: |
-        cd /var/www/laravel/laravel
+        cd /var/www/laravel
         php artisan key:generate
       become: yes
