@@ -1,0 +1,51 @@
+---
+- name: Install Apache, set timezone and display hostname and time
+  hosts: all
+  remote_user: ec2-user
+  gather_facts: true
+
+  tasks:
+    - name: Update YUM cache
+      yum:
+        name: '*'
+        state: latest
+      register: yum_result
+
+
+  tasks:
+  - name: Install Apache web server
+    become: yes
+    yum:
+      name: httpd
+      state: present
+
+  - name: Set timezone to Africa/Lagos
+    become: yes
+    command: timedatectl set-timezone Africa/Lagos
+    register: timezone_set
+
+  - name: Display message indicating timezone set
+    debug:
+      msg: "Timezone set to Africa/Lagos"
+    when: timezone_set.changed
+
+  - name: Create simple HTML page that displays hostname and time
+    become: yes
+    copy:
+      content: |
+        <html>
+          <head>
+            <title>Host Information</title>
+          </head>
+          <body>
+            <p>Hostname: {{ inventory_hostname }}</p>
+            <p>Time: {{ ansible_date_time.iso8601 }}</p>
+          </body>
+        </html>
+      dest: /var/www/html/index.html
+
+  - name: Start Apache service
+    become: yes
+    service:
+      name: httpd
+      state: started
